@@ -15,13 +15,14 @@ class Rectangle {
 	}
 }
 	
-let rec = new Rectangle(2,4)
-rec.getArea()
+
 class Square extends Rectangle {
 	getPerimeter(){
 		console.log(4*this.width)
 	}
 }
+let rec = new Rectangle(2,4)
+rec.getArea()
 let squa = new Square(4)
 squa.getPerimeter()
 
