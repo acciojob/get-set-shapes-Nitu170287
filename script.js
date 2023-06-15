@@ -11,18 +11,19 @@ class Rectangle {
 		return this.height
 	}
 	getArea(){
-		return this.width * this.height
+		console.log(this.width * this.height)
 	}
 }
-	let rec = new Rectangle(4,4)
-console.log(rec.getArea())
+	
+let rec = new Rectangle(2,4)
+rec.getArea()
 class Square extends Rectangle {
 	getPerimeter(){
-		return 4*rec.width
+		console.log(4*this.width)
 	}
 }
-let squa = new Square()
-console.log(squa.getPerimeter())
+let squa = new Square(4)
+squa.getPerimeter()
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
